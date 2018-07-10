@@ -54,8 +54,8 @@ function removeFromCart(item) {
       itemsRemoved++;
     }
   }
-  if(itemsRemoved > 0){
-    return 
+  if(itemsRemoved === 0){
+    return 'That item is not in your cart.'
   }
 }
 
