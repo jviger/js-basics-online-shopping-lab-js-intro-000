@@ -11,8 +11,8 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your coherede 
- var price = Math.floor(Math.random() * 100 + 1);
- var itemObject = { item: price};
+ var priceValue = Math.floor(Math.random() * 100 + 1);
+ var itemObject = { itemName: item, price: priceValue};
  
  cart.push(itemObject);
  
