@@ -47,10 +47,15 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  var itemsRemoved = 0;
   for(let i = 0; i < cart.length; i++){
     if(cart[i].itemName === item){
       cart.splice(i,1);
+      itemsRemoved++;
     }
+  }
+  if(itemsRemoved > 0){
+    return 
   }
 }
 
