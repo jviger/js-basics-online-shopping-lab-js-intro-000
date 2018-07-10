@@ -15,11 +15,14 @@ function addToCart(item) {
  var itemObject = { itemName: item, itemPrice: price};
  
  cart.push(itemObject);
- 
+ return `${item} has been added to your cart.`;
 }
 
 function viewCart() {
   // write your code here
+  if(cart.length < 1){
+  return "Your shopping cart is empty.";
+  }
 }
 
 function total() {
