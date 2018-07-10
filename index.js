@@ -30,8 +30,9 @@ function viewCart() {
     var message = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, ${cart[1].itemName} at $${cart[1].itemPrice}, ` ;
     for(let i = 2; i < cart.length -1; i++){
        message = message + `${cart[i].itemName} at $${cart[i].itemPrice}, `;
-      
     }
+    message = message + `and ${cart[cart.length -1].itemName} at $${cart[i].itemPrice}.`; 
+    return message;
 }
 }
 
